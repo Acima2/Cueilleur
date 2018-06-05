@@ -1,0 +1,292 @@
+/* BACKGROUND */
+@font-face {
+
+	font-family: Marker;
+	src: url(../newFonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+body {
+	margin: 0px; /* retire le décalage */
+}
+
+.ciel {
+	width: 100vw;
+	height: 100vh; /* VH pour la hauteur - VM pour la largeur _ 100 c'est la largeur ou hauteur totale de ton écran */
+	z-index: 1;
+	position: absolute;
+	background-image: url(../img/ciel.jpg); /* Les deux petits servent
+	 à retourner à la racine pour le chemin */
+	background-repeat: no-repeat; /* évite la répitition */
+	background-size: 110% 130%;  /*cette technique permet le dépassement du cadre */
+	background-position: center; /* permet de centrer l'image, tu peux par
+	exemple le mettre en top, sa position commencera en haut */
+}
+
+/* TITRE */
+
+h1 {
+	z-index: 2;
+  	position: relative;
+	opacity: 0.9;
+	margin-top: 90px;
+	margin-left: 12%;
+	margin-top: 1%;
+	color: white;
+	text-shadow: 1.5px 1.5px 1.5px white;
+	font-size: 52px; /* em pour responsive, permet une adaptation sur écran */
+	font-weight: bold;
+	font-family: "Marker";
+}
+
+/* BOUTON CLICKER PLANETE */
+
+.boutonPrincipal {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 5px 4px 8px 7px #4FA2E8;
+	position: absolute;
+	left: 15%;
+}
+.planete {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* COMPTEUR */
+
+.compteur {
+	color: black;
+	background-color: #CCCCBC;
+	opacity: 0.7;
+	border-radius: 10px;
+	border: solid 3px white;
+	width: 220px;
+	height: 80px;
+	text-align: center;
+	padding-top: 15px;
+	font-weight: bold;
+	font-size: 16px;
+	/*font-family: "Marker";*/
+	position: absolute;
+	top: 71%;
+	left: 26%;
+}
+
+/* ACHAT */
+
+.achat {
+	position: absolute;
+	top: 18%;
+	right: 5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 1%;
+	background-color: black;
+	opacity: 0.7;
+	width: 240px;
+	border: solid 3px white;
+	border-radius: 20px;
+	color: white;
+	font-size: 18px;
+	/*font-family: "Marker";*/
+	font-weight: bold;
+	text-align: center;
+}
+
+.btn {
+	background-color: #CCCCBC;
+	border: solid 3px white; 
+	border-radius: 3px;
+	width: 120px;
+	color: black;
+	/*font-family: "Marker";*/
+	margin-top: 7%;
+	margin-left: 11%;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: black;
+	background-color: #4FA2E8;
+}
+
+.zik {
+	width: 200px;
+	display: block;
+	cursor: pointer;
+}
+
+/*ETOILES*/
+.prince {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	top: 2%;
+	left: 4%;
+}
+
+.petitPrince {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: 2%;
+	left: 4%;
+}
+
+.serpent {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	top: 15%;
+	right: 50%;
+	cursor: pointer;
+}
+.star1 {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	top: 15%;
+	right: 50%;
+}
+
+.buveur {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	cursor: pointer;
+}
+.star2 {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+}
+
+.allumeur {
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	position: absolute;
+	top: 3%;
+	right: 27%;
+	cursor: pointer;
+}
+.star3 {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	position: absolute;
+	top: 3%;
+	right: 27%;
+}
+
+.boa {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 35%;
+	left: 3%;
+	cursor: pointer;
+}
+.star4 {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 35%;
+	left: 3%;
+}
+
+.comptable {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 15%;
+	right: 5%;
+	cursor: pointer;
+}
+.star5 {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 15%;
+	right: 5%;
+}
+
+.mouton {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	top: 2%;
+	right: 5%;
+}
+.star6 {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	position: absolute;
+	top: 2%;
+	right: 5%;
+	cursor: pointer;
+}
+
+.renard {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	top: 38%;
+	left: 45%;
+	cursor: pointer;
+}
+.star7 {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	top: 38%;
+	left: 45%;
+}
+
+.rose {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: 45%;
+	left: 27%;
+	cursor: pointer;
+}
+.star8 {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: 45%;
+	left: 27%;
+}
+

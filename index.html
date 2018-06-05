@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	<title>Le cueilleur d'étoiles</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/prince.css">
+	<script src="js/prince.js"></script>
+</head>
+<body>
+	<!--IMAGE DE FOND + TITRE-->
+	<div class="ciel">
+	
+		<h1>Le Cueilleur d'étoiles</h1>
+
+<!--A REVOIR-->
+		<!--IMAGE CLICKABLE + MESSAGE-->
+		<div id="message" class="prince">
+			
+		</div> <!--fin de div prince-->
+
+		<!--BOUTON PRINCIPAL-->
+		<div class="boutonPrincipal">
+			<img src="img/planete.jpg" width="100" height="100" id="total" class="planete" onclick="stardust()">
+		</div> <!--fin de div bouton principal-->
+
+		<!--COMPTEUR : affiche le nombre gagné + temps + autoclick-->
+		<div class="compteur">
+		    <p>
+		    <span id="totalClicks">0</span> Poussière d'étoile<br />
+		    <span id="lvlClickerCompteur">0</span> clicks / <span id="timePeriod">1</span> seconde: 
+		    </p>
+		</div> <!--fin de div compteur-->
+
+		<!--TABLEAU ACHATS-->
+		<div class="achat">
+				    <table class="table">
+				        <tr>
+				          <td id="multiplier">Niveau 1</td>
+				          <td><button id="costMultiplier" type="button" class="btn" onclick="updateMultiplier()">acheter pour 1</button></td>	
+				        </tr>
+				        <tr>
+				          <td id="lvlClicker"> Niveau 0</td>
+				          <td><button id="costAutoClicker" type="button" class="btn" onclick="autoClicker()">acheter pour 100</button></td>
+				        </tr>
+				        <tr>
+				        	<td id="timer">Niveau 1</td>
+				        	<td><button id="costTimer" type="button" class="btn" onclick="timer()">Acheter pour 1000</button></td>
+				        </tr>
+				        <tr>
+				        	<!--musique-->
+				        	<audio controls class="zik">
+				        	  <source src="mp3/testzik.mp3" type="audio/mpeg"> 
+				        	</audio>
+				        </tr>
+				    </table>
+			    </div> <!--fin de div achat-->
+
+			    <!--PLANETES QUI APPARAISSENT A UN CERTAIN NIVEAU DE POUSSIERE D'ETOILE + MESSAGE-->
+			    <div id="serpent" class="serpent">
+			    </div>
+
+			    <div id="buveur" class="buveur">
+			    </div>
+
+			    <div id="allumeur" class="allumeur"></div>
+
+			    <div id="boa" class="boa"></div>
+
+			    <div id="comptable" class="comptable"></div>
+
+			    <div id="mouton" class="mouton"></div>
+	
+			    <div id="renard" class="renard"></div>
+			    
+			    <div id="rose" class="rose"></div>
+
+
+	</div> <!--fin de div ciel-->
+
+</body>
+</html>
